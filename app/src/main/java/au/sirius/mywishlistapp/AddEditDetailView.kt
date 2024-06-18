@@ -90,7 +90,7 @@ fun AddEditDetailView(
                 if(viewModel.wishTitleState.isNotEmpty() &&
                     viewModel.wishDescriptionState.isNotEmpty()){
                     if(id!=0L){
-                        //TODO UpdateWish
+
                         viewModel.updateWish(
                             Wish(
                                 id = id,
@@ -100,7 +100,6 @@ fun AddEditDetailView(
                         )
                     }
                     else{
-                        // TODO AddWish
                         viewModel.addWish(wish = Wish(
                             title = viewModel.wishTitleState.trim(),
                             description = viewModel.wishDescriptionState.trim()
